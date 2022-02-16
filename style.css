@@ -38,6 +38,7 @@ body {
     padding: 1.5em 1.75em 1.25em 1.75em;
     border-radius: 1.25em;
     width: 334px;
+    position: relative;
 }
 
 .container > img {
@@ -45,6 +46,14 @@ body {
     border-radius: 0.625em;
     margin-bottom: 1.5em;
 }
+
+/* #view {
+    visibility: hidden;
+    background-color: var(--Cyan);
+    top: 0;
+    position: absolute;
+    height: 100%;
+} */
 
 #details {
     line-height: 165%;
