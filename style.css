@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding
+    : 0;
+}
+:root {
+    --Very-dark-blue-main: hsl(217, 54%, 11%);   /*main BG*/
+    --Very-dark-blue: hsl(216, 50%, 16%);   /*card BG*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%);   /*line*/
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.007em;
+    padding-bottom: 0.9375em;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
+    background-color: var(--Very-dark-blue-main);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--Soft-blue);
+}
+
+.container {
+    background-color: var(--Very-dark-blue);
+    padding: 1.5em 1.75em 1.25em 1.75em;
+    border-radius: 1.25em;
+    width: 353px;
+}
+
+.container > img {
+    max-width: 100%;
+    border-radius: 0.625em;
+    margin-bottom: 1.5em;
+}
+
+#details {
+    line-height: 165%;
+    padding-bottom: 1.25em;
+}
+
+.priceTimeLeft > div {
+    display: flex;
+    align-items: center;
+}
+
+.priceTimeLeft > div > img {
+    margin-right: 5px;
+}
+
+.priceTimeLeft {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--Very-dark-blue-line);
+    padding-bottom: 1em;
+}
+
+#eth {
+    font-weight: 600;
+    font-size: 0.9375em;
+    letter-spacing: 0.013em;
+    color: var(--Cyan);
+}
+
+#timeLeft {
+    font-size: 0.9375em;
+    letter-spacing: 0.013em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 1.125em;
+}
+
+.user > img {
+    border: 2px solid var(--White);
+    border-radius: 50px;
+    margin-right: 1em;
+}
+
+div .user p {
+    font-size: 1em;
+    letter-spacing: -0.025em;
+}
+
+span#name {
+    color: var(--White);
+    letter-spacing: -0.005em;
+}
+
+h1:hover,
+span#name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(81, 78%, 65%); }
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+        font-size: 0.9375em;
+    }
+
+    .priceTimeLeft {
+        letter-spacing: 0.013em;
+    }
+
+    .user > p {
+        letter-spacing: -0.025em;
+    }
+
+    span#name {
+        letter-spacing: -0.015em;
+    }
+}
