@@ -107,7 +107,9 @@ span#name:hover {
     cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+    padding-top: 20px;
+}
 .attribution a { color: hsl(81, 78%, 65%); }
 
 @media only screen and (max-width: 400px) {
